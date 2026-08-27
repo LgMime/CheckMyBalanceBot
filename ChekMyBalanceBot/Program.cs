@@ -5,7 +5,7 @@ using Telegram.Bot.Polling;
 using System.Text.Json;
 
 // Configuration
-const string botToken = "8234600723:AAEOuQfGSTmU_Gw1Wgz33PwVWDGdB3MGyig";
+const string botToken = "Your bot`s token";
 const string bankApiUrl = "https://api-open.ccp.dnb.no/v1/kronekort/balance";
 const string storageFilePath = "users_storage.json"; // Имя файла для сохранения данных
 
@@ -245,7 +245,7 @@ string FormatJson(string json)
     }
 }
 
-// 🔥 Метод для ЗАГРУЗКИ данных из JSON-файла
+// Метод для ЗАГРУЗКИ данных из JSON-файла
 Dictionary<long, string> LoadUserData()
 {
     if (!System.IO.File.Exists(storageFilePath))
@@ -266,7 +266,7 @@ Dictionary<long, string> LoadUserData()
     }
 }
 
-// 🔥 Метод для СОХРАНЕНИЯ данных в JSON-файл
+// Метод для СОХРАНЕНИЯ данных в JSON-файл
 void SaveUserData(Dictionary<long, string> data)
 {
     try
